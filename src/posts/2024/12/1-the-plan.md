@@ -2,6 +2,7 @@
 title: The Plan
 date: 2024-12-01
 tags: post
+hero: vanada-map.png
 ---
 
 ## Background

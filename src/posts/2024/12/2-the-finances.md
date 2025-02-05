@@ -2,6 +2,7 @@
 title: How can I afford this?
 date: 2024-12-02
 tags: post
+hero: panorama.jpg
 ---
 
 ## Without knowing it, I've become a digital nomad
