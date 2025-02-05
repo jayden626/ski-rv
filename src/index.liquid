@@ -1,11 +1,16 @@
 ---
-title: RV Ski Tour
+title: Posts
 layout: main
 ---
-{% for post in collections.post reversed %}
-  <p>
-    <a href="{{post.url}}">{{ post.data.title }}</a>
-    - {{ post.date | niceDate }}
-    {% excerpt post %} <a href="{{post.url}}">Continue Reading</a>
-  </p>
-{% endfor %}
+<div class="posts">
+  {% for post in collections.post reversed %}
+    <div class="post-card">
+      <h2>{{ post.data.title }}</h2>
+      <p>{% excerpt post %}</p>
+      <div class="footer">
+        <p>{{ post.date | niceDate }}</p>
+        <a href="{{post.url}}" class="button">Continue Reading</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
