@@ -5,19 +5,21 @@ layout: main
 <div class="posts">
   {% for post in collections.post reversed %}
     <div class="post-card">
-      <img
-        src="{{ post.url }}../images/{{post.data.hero}}"
-        alt="tbd"
-        width="100px"
-        height="100px" />
-      <div class="content">
-        <h2>{{ post.data.title }}</h2>
-        <p>{% excerpt post %}</p>
-        <div class="footer">
-          <p>{{ post.date | niceDate }}</p>
-          <a href="{{post.url}}" class="button">Continue Reading</a>
+      <a href="{{post.url}}">
+        <img
+          src="{{ post.url }}../images/{{post.data.hero}}"
+          alt="tbd"
+          width="100px"
+          height="100px" />
+        <div class="content">
+          <h2>{{ post.data.title }}</h2>
+          <p>{% excerpt post %}</p>
+          <div class="footer">
+            <p>{{ post.date | niceDate }}</p>
+            <a href="{{post.url}}" class="button">Continue Reading</a>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </div>

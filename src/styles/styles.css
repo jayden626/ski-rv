@@ -39,6 +39,11 @@ header li:hover {
     justify-content: space-evenly;
 }
 
+.post-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .post-card {
     display: flex;
     flex-direction: column;
