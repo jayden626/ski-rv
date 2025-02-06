@@ -5,7 +5,7 @@ jobs:
   build_deploy:
     runs-on: ubuntu:latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Build
         uses: TartanLlama/actions-eleventy@master
         with:
